@@ -1,16 +1,17 @@
-import { FlexCenter, Flex } from "../styles/flex";
+import { Flex } from "../styles/flex";
 import OrderListImg from "../images/order-list.png";
 import BasketImg from "../images/basket.png";
+import Button from "./Button";
 
 const ActionButtons = () => {
   return (
     <Flex>
-      <FlexCenter>
-        <img src={OrderListImg} alt="Logo" />
-      </FlexCenter>
-      <FlexCenter>
-        <img src={BasketImg} alt="Logo" />
-      </FlexCenter>
+      <Button
+        variant="transparent"
+        children="Lista zamówień"
+        IconSrc={OrderListImg}
+      />
+      <Button variant="transparent" children="Koszyk" IconSrc={BasketImg} />
     </Flex>
   );
 };

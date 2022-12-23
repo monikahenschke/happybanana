@@ -1,16 +1,17 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import { GlobalTheme } from "./styles/GlobalTheme";
+import { GlobalTheme } from "./styles/globalTheme";
 import { GlobalFontStyles } from "./styles/fontStyles";
 import { GlobalStyles } from "./styles/globalStyles";
 
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import ProductCard from "./components/ProductCard";
 import Basket from "./components/Basket";
 import OrderList from "./components/OrderList";
 import ProductList from "./components/ProductList";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
 export const AppRoutes = () => (
   <Routes>
@@ -27,6 +28,8 @@ function App() {
       <GlobalStyles />
       <GlobalFontStyles />
       <Header />
+      <Content />
+      <Footer />
       <Router>
         <div className="container">
           <nav>
