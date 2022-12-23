@@ -32,4 +32,9 @@ export const GlobalStyles = createGlobalStyle`
   h4 {
     margin: 0;
   }
+
+  img {
+    max-width: 100%;
+  }
+
 `;
