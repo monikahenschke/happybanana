@@ -1,0 +1,166 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Kalafior",
+      "quantity": "1 sztuka",
+      "price": "7,89",
+      "origin": "Polska",
+      "image": "kalafior.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Arbuz",
+      "quantity": "1 sztuka",
+      "price": "16,99",
+      "origin": "RPA",
+      "image": "arbuz.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Dynia hokkaido",
+      "quantity": "1 sztuka",
+      "price": "5,89",
+      "origin": "Polska",
+      "image": "dynia-hokkaido.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Jabłko Reneta Czerwona",
+      "quantity": "1 sztuka",
+      "price": "0,99",
+      "origin": "Polska",
+      "image": "jablka-reneta-czerwona.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Winogrona czerwone",
+      "quantity": "1kg",
+      "price": "12,99",
+      "origin": "Polska",
+      "image": "Winogrono-cz.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Por",
+      "quantity": "1 sztuka",
+      "price": "3,99",
+      "origin": "Polska",
+      "image": "por.png"
+    },
+    {
+      "id": 7,
+      "title": "Jabłko Gala",
+      "quantity": "1 sztuka",
+      "price": "1,29",
+      "origin": "Polska",
+      "image": "jablko-gala.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Banany",
+      "quantity": "5 sztuk",
+      "price": "9,99",
+      "origin": "Brazylia",
+      "image": "czy-pies-moze-jesc-banany.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Truskawki",
+      "quantity": "1 kg",
+      "price": "22,50",
+      "origin": "Polska",
+      "image": "sezon-na-truskawki.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Jabłko Goldstar",
+      "quantity": "1 sztuka",
+      "price": "1,15",
+      "origin": "Polska",
+      "image": "goldstar.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Brokuł",
+      "quantity": "1 sztuka",
+      "price": "3,99",
+      "origin": "Polska",
+      "image": "brokul.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Marchew",
+      "quantity": "1kg",
+      "price": "4,49",
+      "origin": "Polska",
+      "image": "Marchewka.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Pietruszka",
+      "quantity": "1kg",
+      "price": "11,99",
+      "origin": "Polska",
+      "image": "pietruszka.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Włoszczyzna",
+      "quantity": "pęczek",
+      "price": "7,79",
+      "origin": "Polska",
+      "image": "wloszczyzna1.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Szczypiorek",
+      "quantity": "pęczek",
+      "price": "1,29",
+      "origin": "Polska",
+      "image": "szczypiorek.png"
+    },
+    {
+      "id": 16,
+      "title": "Kurkuma",
+      "quantity": "1kg",
+      "price": "39,99",
+      "origin": "Australia",
+      "image": "Kurkuma-wlasciwosci.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Imbir",
+      "quantity": "1kg",
+      "price": "26,99",
+      "origin": "Polska",
+      "image": "imbir.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Mandarynki",
+      "quantity": "1kg",
+      "price": "4,49",
+      "origin": "Włochy",
+      "image": "mandarynki.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Czosnek",
+      "quantity": "1kg",
+      "price": "11,99",
+      "origin": "Polska",
+      "image": "czosn.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Gruszka",
+      "quantity": "1kg",
+      "price": "3,99",
+      "origin": "Polska",
+      "image": "gruszki.jpg"
+    }
+  ],
+  "test1": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "test2": { "name": "typicode" }
+}

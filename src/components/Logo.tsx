@@ -1,11 +1,14 @@
-import LogoImg from "../images/logo.png";
-import { FlexCenter } from "../styles/flex";
+import LogoImg from "../assets/logo-hb.png";
+import LinkButton from "./LinkButton";
 
 const Logo = () => {
   return (
-    <FlexCenter>
-      <img src={LogoImg} alt="Logo" />
-    </FlexCenter>
+    <LinkButton
+      to="/"
+      IconSrc={LogoImg}
+      children="Logo"
+      variant="logo"
+    ></LinkButton>
   );
 };
 

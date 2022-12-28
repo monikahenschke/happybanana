@@ -11,6 +11,10 @@ const StyledHeader = styled.header`
   height: 70px;
   width: 100%;
   position: relative;
+
+  div {
+    height: 100%;
+  }
 `;
 
 const Header = () => {

@@ -1,27 +1,31 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
-type ButtonProps = {
+type LinkButtonProps = {
   children: string;
   IconSrc?: string;
   filters?: boolean;
   variant?: string;
+  to: string;
 };
 
-const Button = ({ children, IconSrc, variant }: ButtonProps) => {
+const LinkButton = ({ to, children, IconSrc, variant }: LinkButtonProps) => {
   return (
-    <StyledButton variant={variant}>
-      {IconSrc ? (
-        <IconWrapper variant={variant}>
-          <img src={IconSrc} alt={children} />
-        </IconWrapper>
-      ) : (
-        children
-      )}
-    </StyledButton>
+    <StyledLinkButton variant={variant}>
+      <Link to={to}>
+        {IconSrc ? (
+          <IconWrapper variant={variant}>
+            <img src={IconSrc} alt={children} />
+          </IconWrapper>
+        ) : (
+          children
+        )}
+      </Link>
+    </StyledLinkButton>
   );
 };
 
-const StyledButton = styled.button<{ variant?: string }>`
+const StyledLinkButton = styled.div<{ variant?: string }>`
   background-color: ${({ theme }) => theme.colors.primary};
   border: none;
   cursor: pointer;
@@ -29,6 +33,9 @@ const StyledButton = styled.button<{ variant?: string }>`
   font-size: 13px;
   margin: 5px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   ${({ variant }) =>
     variant === "border" &&
@@ -63,8 +70,8 @@ const IconWrapper = styled.div<{ variant?: string }>`
     variant === "logo" &&
     css`
       max-width: 100%;
-      max-height: 100%;
+      max-height: 50px;
     `}
 `;
 
-export default Button;
+export default LinkButton;
