@@ -1,10 +1,11 @@
 import React from "react";
+import Filters from "./Filters";
 
 const ProductList = () => {
   return (
-    <div className="container">
-      <h1>ProductList</h1>
-    </div>
+    <>
+      <Filters />
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import { SpecialFontStyles } from "../styles/fontStyles";
 import { FlexCenter } from "../styles/flex";
@@ -15,11 +16,13 @@ const LogoTextYellow = styled(LogoText)`
 
 const HappyBananaText = () => {
   return (
-    <FlexCenter>
-      <SpecialFontStyles />
-      <LogoText>Happy</LogoText>
-      <LogoTextYellow>Banana</LogoTextYellow>
-    </FlexCenter>
+    <Link to="/">
+      <FlexCenter>
+        <SpecialFontStyles />
+        <LogoText>Happy</LogoText>
+        <LogoTextYellow>Banana</LogoTextYellow>
+      </FlexCenter>
+    </Link>
   );
 };
 

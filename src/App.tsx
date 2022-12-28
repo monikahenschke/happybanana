@@ -25,12 +25,12 @@ export const AppRoutes = () => (
 function App() {
   return (
     <ThemeProvider theme={GlobalTheme}>
-      <GlobalStyles />
-      <GlobalFontStyles />
-      <Header />
-      <Content />
-      <Footer />
       <Router>
+        <GlobalStyles />
+        <GlobalFontStyles />
+        <Header />
+        <AppRoutes />
+        <Footer />
         <div className="container">
           <nav>
             <ul>
@@ -48,7 +48,6 @@ function App() {
               </li>
             </ul>
           </nav>
-          <AppRoutes />
         </div>
       </Router>
     </ThemeProvider>
