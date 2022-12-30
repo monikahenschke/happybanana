@@ -15,6 +15,13 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: Montserrat, sans-serif;
     margin: 0 auto;
+    max-width: 1920px;
+
+  }
+
+
+  body, #root {
+    width: 100%;
   }
 
   input,
@@ -40,4 +47,6 @@ export const GlobalStyles = createGlobalStyle`
 a {
   text-decoration: none;
 }
+
+transition: all 0.5s linear;
 `;

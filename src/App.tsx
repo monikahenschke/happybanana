@@ -9,13 +9,13 @@ import Header from "./components/Header";
 import ProductCard from "./components/ProductCard";
 import Basket from "./components/Basket";
 import OrderList from "./components/OrderList";
-import ProductList from "./components/ProductList";
-import Content from "./components/Content";
+import ProductListContainer from "./containers/ProductListContainer";
 import Footer from "./components/Footer";
+import { ProductContextProvider } from "./services/ProductContext";
 
 export const AppRoutes = () => (
   <Routes>
-    <Route path="/" element={<ProductList />} />
+    <Route path="/" element={<ProductListContainer />} />
     <Route path="/basket" element={<Basket />} />
     <Route path="/order-list" element={<OrderList />} />
     <Route path="/product/:id" element={<ProductCard />} />
@@ -25,31 +25,33 @@ export const AppRoutes = () => (
 function App() {
   return (
     <ThemeProvider theme={GlobalTheme}>
-      <Router>
-        <GlobalStyles />
-        <GlobalFontStyles />
-        <Header />
-        <AppRoutes />
-        <Footer />
-        <div className="container">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Product List</Link>
-              </li>
-              <li>
-                <Link to="/basket">Basket</Link>
-              </li>
-              <li>
-                <Link to="/order-list">Order List</Link>
-              </li>
-              <li>
-                <Link to="/product/2">Product 2</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </Router>
+      <ProductContextProvider>
+        <Router>
+          <GlobalStyles />
+          <GlobalFontStyles />
+          <Header />
+          <AppRoutes />
+          <Footer />
+          <div className="container">
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/">Product List</Link>
+                </li>
+                <li>
+                  <Link to="/basket">Basket</Link>
+                </li>
+                <li>
+                  <Link to="/order-list">Order List</Link>
+                </li>
+                <li>
+                  <Link to="/product/2">Product 2</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </Router>
+      </ProductContextProvider>
     </ThemeProvider>
   );
 }

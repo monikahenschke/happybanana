@@ -2,19 +2,46 @@ import styled from "styled-components";
 
 import Button from "./Button";
 import { FlexCenter } from "../styles/flex";
+import { Container } from "../styles/components";
+
+const Filters = () => {
+  return (
+    <StyledFilters>
+      <Container>
+        <FlexCenter>
+          <Sorting />
+          <FilterButtons>
+            <Button variant="border">Warzywa</Button>
+            <Button variant="border">Owoce</Button>
+          </FilterButtons>
+          <FlexCenter>
+            <Sorting>
+              <p>sortuj po:</p>
+              <Select>
+                <option>nazwa</option>
+                <option>cena</option>
+              </Select>
+            </Sorting>
+          </FlexCenter>
+        </FlexCenter>
+      </Container>
+    </StyledFilters>
+  );
+};
 
 const StyledFilters = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
   height: 70px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   p {
     font-size: 13px;
     white-space: nowrap;
+  }
+
+  div {
+    height: 100%;
   }
 `;
 
@@ -42,7 +69,7 @@ const Select = styled.select`
 const Sorting = styled.div`
   width: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -52,26 +79,5 @@ const FilterButtons = styled.div`
   align-items: center;
   flex-grow: 1;
 `;
-
-const Filters = () => {
-  return (
-    <StyledFilters>
-      <Sorting />
-      <FilterButtons>
-        <Button variant="border">Warzywa</Button>
-        <Button variant="border">Owoce</Button>
-      </FilterButtons>
-      <FlexCenter>
-        <Sorting>
-          <p>sortuj po:</p>
-          <Select>
-            <option>nazwa</option>
-            <option>cena</option>
-          </Select>
-        </Sorting>
-      </FlexCenter>
-    </StyledFilters>
-  );
-};
 
 export default Filters;

@@ -3,12 +3,7 @@ import LinkButton from "./LinkButton";
 
 const Logo = () => {
   return (
-    <LinkButton
-      to="/"
-      IconSrc={LogoImg}
-      children="Logo"
-      variant="logo"
-    ></LinkButton>
+    <LinkButton to="/" IconSrc={LogoImg} alt="Logo" variant="logo"></LinkButton>
   );
 };
 

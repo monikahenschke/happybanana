@@ -4,41 +4,46 @@
       "id": 1,
       "title": "Kalafior",
       "quantity": "1 sztuka",
-      "price": "7,89",
+      "price": 7.89,
       "origin": "Polska",
-      "image": "kalafior.jpg"
+      "image": "kalafior.jpg",
+      "category": "warzywo"
     },
     {
       "id": 2,
       "title": "Arbuz",
       "quantity": "1 sztuka",
-      "price": "16,99",
+      "price": 16.99,
       "origin": "RPA",
-      "image": "arbuz.jpg"
+      "image": "arbuz.jpg",
+      "category": "owoc"
     },
     {
       "id": 3,
       "title": "Dynia hokkaido",
       "quantity": "1 sztuka",
-      "price": "5,89",
+      "price": 5.89,
       "origin": "Polska",
-      "image": "dynia-hokkaido.jpg"
+      "image": "dynia-hokkaido.jpg",
+      "category": "warzywo"
     },
     {
       "id": 4,
       "title": "Jabłko Reneta Czerwona",
       "quantity": "1 sztuka",
-      "price": "0,99",
+      "price": 0.99,
       "origin": "Polska",
-      "image": "jablka-reneta-czerwona.jpeg"
+      "image": "jablka-reneta-czerwona.jpeg",
+      "category": "owoc"
     },
     {
       "id": 5,
       "title": "Winogrona czerwone",
       "quantity": "1kg",
-      "price": "12,99",
+      "price": 12.99,
       "origin": "Polska",
-      "image": "Winogrono-cz.jpg"
+      "image": "Winogrono-cz.jpg",
+      "category": "owoc"
     },
     {
       "id": 6,
@@ -46,119 +51,314 @@
       "quantity": "1 sztuka",
       "price": "3,99",
       "origin": "Polska",
-      "image": "por.png"
+      "image": "por.png",
+      "category": "warzywo"
     },
     {
       "id": 7,
       "title": "Jabłko Gala",
       "quantity": "1 sztuka",
-      "price": "1,29",
+      "price": 1.29,
       "origin": "Polska",
-      "image": "jablko-gala.jpg"
+      "image": "jablko-gala.jpg",
+      "category": "owoc"
     },
     {
       "id": 8,
       "title": "Banany",
       "quantity": "5 sztuk",
-      "price": "9,99",
+      "price": 9.99,
       "origin": "Brazylia",
-      "image": "czy-pies-moze-jesc-banany.jpg"
+      "image": "czy-pies-moze-jesc-banany.jpg",
+      "category": "owoc"
     },
     {
       "id": 9,
       "title": "Truskawki",
       "quantity": "1 kg",
-      "price": "22,50",
+      "price": 22.5,
       "origin": "Polska",
-      "image": "sezon-na-truskawki.jpeg"
+      "image": "sezon-na-truskawki.jpeg",
+      "category": "owoc"
     },
     {
       "id": 10,
       "title": "Jabłko Goldstar",
       "quantity": "1 sztuka",
-      "price": "1,15",
+      "price": 1.15,
       "origin": "Polska",
-      "image": "goldstar.jpg"
+      "image": "goldstar.jpg",
+      "category": "owoc"
     },
     {
       "id": 11,
       "title": "Brokuł",
       "quantity": "1 sztuka",
-      "price": "3,99",
+      "price": 3.99,
       "origin": "Polska",
-      "image": "brokul.jpg"
+      "image": "brokul.jpg",
+      "category": "warzywo"
     },
     {
       "id": 12,
       "title": "Marchew",
       "quantity": "1kg",
-      "price": "4,49",
+      "price": 4.49,
       "origin": "Polska",
-      "image": "Marchewka.jpg"
+      "image": "Marchewka.jpg",
+      "category": "warzywo"
     },
     {
       "id": 13,
       "title": "Pietruszka",
       "quantity": "1kg",
-      "price": "11,99",
+      "price": 11.99,
       "origin": "Polska",
-      "image": "pietruszka.jpg"
+      "image": "pietruszka.jpg",
+      "category": "warzywo"
     },
     {
       "id": 14,
       "title": "Włoszczyzna",
       "quantity": "pęczek",
-      "price": "7,79",
+      "price": 7.79,
       "origin": "Polska",
-      "image": "wloszczyzna1.jpg"
+      "image": "wloszczyzna1.jpg",
+      "category": "warzywo"
     },
     {
       "id": 15,
       "title": "Szczypiorek",
       "quantity": "pęczek",
-      "price": "1,29",
+      "price": 1.29,
       "origin": "Polska",
-      "image": "szczypiorek.png"
+      "image": "szczypiorek.png",
+      "category": "warzywo"
     },
     {
       "id": 16,
       "title": "Kurkuma",
       "quantity": "1kg",
-      "price": "39,99",
+      "price": 39.99,
       "origin": "Australia",
-      "image": "Kurkuma-wlasciwosci.jpg"
+      "image": "Kurkuma-wlasciwosci.jpg",
+      "category": "warzywo"
     },
     {
       "id": 17,
       "title": "Imbir",
       "quantity": "1kg",
-      "price": "26,99",
+      "price": 26.99,
       "origin": "Polska",
-      "image": "imbir.jpg"
+      "image": "imbir.jpg",
+      "category": "warzywo"
     },
     {
       "id": 18,
       "title": "Mandarynki",
       "quantity": "1kg",
-      "price": "4,49",
+      "price": 4.49,
       "origin": "Włochy",
-      "image": "mandarynki.jpg"
+      "image": "mandarynki.png",
+      "category": "owoc"
     },
     {
       "id": 19,
       "title": "Czosnek",
       "quantity": "1kg",
-      "price": "11,99",
+      "price": 11.99,
       "origin": "Polska",
-      "image": "czosn.jpg"
+      "image": "swiezy-czosnek.jpg",
+      "category": "warzywo"
     },
     {
       "id": 20,
       "title": "Gruszka",
       "quantity": "1kg",
+      "price": 3.99,
+      "origin": "Polska",
+      "image": "gruszki.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 21,
+      "title": "Kalafior",
+      "quantity": "1 sztuka",
+      "price": 7.89,
+      "origin": "Polska",
+      "image": "kalafior.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 22,
+      "title": "Arbuz",
+      "quantity": "1 sztuka",
+      "price": 16.99,
+      "origin": "RPA",
+      "image": "arbuz.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 23,
+      "title": "Dynia hokkaido",
+      "quantity": "1 sztuka",
+      "price": 5.89,
+      "origin": "Polska",
+      "image": "dynia-hokkaido.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 24,
+      "title": "Jabłko Reneta Czerwona",
+      "quantity": "1 sztuka",
+      "price": 0.99,
+      "origin": "Polska",
+      "image": "jablka-reneta-czerwona.jpeg",
+      "category": "owoc"
+    },
+    {
+      "id": 25,
+      "title": "Winogrona czerwone",
+      "quantity": "1kg",
+      "price": 12.99,
+      "origin": "Polska",
+      "image": "Winogrono-cz.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 26,
+      "title": "Por",
+      "quantity": "1 sztuka",
       "price": "3,99",
       "origin": "Polska",
-      "image": "gruszki.jpg"
+      "image": "por.png",
+      "category": "warzywo"
+    },
+    {
+      "id": 27,
+      "title": "Jabłko Gala",
+      "quantity": "1 sztuka",
+      "price": 1.29,
+      "origin": "Polska",
+      "image": "jablko-gala.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 28,
+      "title": "Banany",
+      "quantity": "5 sztuk",
+      "price": 9.99,
+      "origin": "Brazylia",
+      "image": "czy-pies-moze-jesc-banany.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 29,
+      "title": "Truskawki",
+      "quantity": "1 kg",
+      "price": 22.5,
+      "origin": "Polska",
+      "image": "sezon-na-truskawki.jpeg",
+      "category": "owoc"
+    },
+    {
+      "id": 30,
+      "title": "Jabłko Goldstar",
+      "quantity": "1 sztuka",
+      "price": 1.15,
+      "origin": "Polska",
+      "image": "goldstar.jpg",
+      "category": "owoc"
+    },
+    {
+      "id": 31,
+      "title": "Brokuł",
+      "quantity": "1 sztuka",
+      "price": 3.99,
+      "origin": "Polska",
+      "image": "brokul.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 32,
+      "title": "Marchew",
+      "quantity": "1kg",
+      "price": 4.49,
+      "origin": "Polska",
+      "image": "Marchewka.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 33,
+      "title": "Pietruszka",
+      "quantity": "1kg",
+      "price": 11.99,
+      "origin": "Polska",
+      "image": "pietruszka.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 34,
+      "title": "Włoszczyzna",
+      "quantity": "pęczek",
+      "price": 7.79,
+      "origin": "Polska",
+      "image": "wloszczyzna1.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 35,
+      "title": "Szczypiorek",
+      "quantity": "pęczek",
+      "price": 1.29,
+      "origin": "Polska",
+      "image": "szczypiorek.png",
+      "category": "warzywo"
+    },
+    {
+      "id": 36,
+      "title": "Kurkuma",
+      "quantity": "1kg",
+      "price": 39.99,
+      "origin": "Australia",
+      "image": "Kurkuma-wlasciwosci.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 37,
+      "title": "Imbir",
+      "quantity": "1kg",
+      "price": 26.99,
+      "origin": "Polska",
+      "image": "imbir.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 38,
+      "title": "Mandarynki",
+      "quantity": "1kg",
+      "price": 4.49,
+      "origin": "Włochy",
+      "image": "mandarynki.png",
+      "category": "owoc"
+    },
+    {
+      "id": 39,
+      "title": "Czosnek",
+      "quantity": "1kg",
+      "price": 11.99,
+      "origin": "Polska",
+      "image": "swiezy-czosnek.jpg",
+      "category": "warzywo"
+    },
+    {
+      "id": 40,
+      "title": "Gruszka",
+      "quantity": "1kg",
+      "price": 3.99,
+      "origin": "Polska",
+      "image": "gruszki.jpg",
+      "category": "owoc"
     }
   ],
   "test1": [{ "id": 1, "body": "some comment", "postId": 1 }],

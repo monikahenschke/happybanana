@@ -2,20 +2,27 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 type LinkButtonProps = {
-  children: string;
+  children?: string | React.ReactNode;
   IconSrc?: string;
   filters?: boolean;
+  alt?: string;
   variant?: string;
   to: string;
 };
 
-const LinkButton = ({ to, children, IconSrc, variant }: LinkButtonProps) => {
+const LinkButton = ({
+  to,
+  children,
+  IconSrc,
+  variant,
+  alt,
+}: LinkButtonProps) => {
   return (
     <StyledLinkButton variant={variant}>
       <Link to={to}>
         {IconSrc ? (
           <IconWrapper variant={variant}>
-            <img src={IconSrc} alt={children} />
+            <img src={IconSrc} alt={alt} />
           </IconWrapper>
         ) : (
           children
