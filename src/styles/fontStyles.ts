@@ -34,9 +34,6 @@ export const GlobalFontStyles = createGlobalStyle`
        url(${MontserratBoldWoff2}) format('woff2');
     font-weight: 700;
 }
-`;
-
-export const SpecialFontStyles = createGlobalStyle`
 
 @font-face {
   font-family: 'Acme';

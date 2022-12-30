@@ -5,7 +5,7 @@ type ParamTypes = {
   id: string;
 };
 
-const ProductCard = () => {
+const ProductCard: React.FC = () => {
   const { id } = useParams<ParamTypes>();
 
   return (

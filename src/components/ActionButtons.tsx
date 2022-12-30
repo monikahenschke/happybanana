@@ -9,14 +9,14 @@ const ActionButtons = () => {
       <LinkButton
         to="/order-list"
         variant="transparent"
-        children="Lista zamówień"
         IconSrc={OrderListImg}
+        alt="Lista zamówień"
       ></LinkButton>
 
       <LinkButton
         to="/basket"
         variant="transparent"
-        children="Koszyk"
+        alt="Koszyk"
         IconSrc={BasketImg}
       />
     </Flex>

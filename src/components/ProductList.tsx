@@ -1,12 +1,28 @@
 import React from "react";
-import Filters from "./Filters";
+import styled from "styled-components";
 
-const ProductList = () => {
+interface ProductListProps {
+  children: React.ReactNode;
+}
+
+const ProductList: React.FC<ProductListProps> = ({ children }) => {
   return (
-    <>
-      <Filters />
-    </>
+    <StyledProductList>
+      {React.Children.map(children, (child) => (
+        <>{child}</>
+      ))}
+    </StyledProductList>
   );
 };
+
+const StyledProductList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
 
 export default ProductList;

@@ -1,21 +1,9 @@
 import styled from "styled-components";
-import { Container } from "../styles/container";
+import { Container } from "../styles/components";
 import Logo from "./Logo";
 import ActionButtons from "./ActionButtons";
 import HappyBananaText from "./HappyBananaText";
 import { FlexSpaceBetween } from "../styles/flex";
-
-const StyledHeader = styled.header`
-  background-color: ${({ theme }) => theme.colors.white};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
-  height: 70px;
-  width: 100%;
-  position: relative;
-
-  div {
-    height: 100%;
-  }
-`;
 
 const Header = () => {
   return (
@@ -30,5 +18,17 @@ const Header = () => {
     </StyledHeader>
   );
 };
+
+const StyledHeader = styled.header`
+  background-color: ${({ theme }) => theme.colors.white};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+  height: 70px;
+  width: 100%;
+  position: relative;
+
+  div {
+    height: 100%;
+  }
+`;
 
 export default Header;
