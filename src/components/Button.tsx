@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { css } from "styled-components";
 
 type ButtonProps = {
@@ -5,11 +6,12 @@ type ButtonProps = {
   IconSrc?: string;
   filters?: boolean;
   variant?: string;
+  handleClick?: () => void;
 };
 
-const Button = ({ children, IconSrc, variant }: ButtonProps) => {
+const Button = ({ children, IconSrc, variant, handleClick }: ButtonProps) => {
   return (
-    <StyledButton variant={variant}>
+    <StyledButton variant={variant} onClick={handleClick}>
       {IconSrc ? (
         <IconWrapper variant={variant}>
           <img src={IconSrc} alt={children} />
@@ -58,13 +60,5 @@ const IconWrapper = styled.div<{ variant?: string }>`
   align-items: center;
   max-width: 35px;
   max-height: 35px;
-
-  ${({ variant }) =>
-    variant === "logo" &&
-    css`
-      max-width: 100%;
-      max-height: 100%;
-    `}
-`;
 
 export default Button;

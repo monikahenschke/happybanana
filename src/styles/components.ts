@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin: 0 30px;
   max-height: 100%;
-  max-width: 1920px;
 `;
 
 export const ContentText = styled.span`
@@ -22,11 +21,11 @@ export const ButtonDefault = styled.span`
 `;
 export const PriceText = styled.span`
   font-size: 20px;
-  font-family: "Acme", sans-serif;
+  font-family: ${({ theme }) => theme.fonts.special};
 `;
 
 export const LogoText = styled.h1`
-  font-family: Acme, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.special};
   font-size: 27px;
   color: ${({ theme }) => theme.colors.black};
 `;
@@ -38,3 +37,17 @@ export const LogoTextMedium = styled(LogoText)`
 export const ProductCardTitle = styled.h2`
   font-size: 24px;
 `;
+export const PaddingVertical20 = styled.div`
+  padding: 20px 0;
+`;
+export const PaddingVertical5 = styled.div`
+  padding: 5px 0;
+`;
+export const PaddingTop10 = styled.div`
+  padding-top: 10px;
+`;
+
+export const PaddingTop5 = styled.div`
+  padding-top: 5px;
+`;
+

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalTheme } from "./styles/globalTheme";
@@ -32,24 +32,6 @@ function App() {
           <Header />
           <AppRoutes />
           <Footer />
-          <div className="container">
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Product List</Link>
-                </li>
-                <li>
-                  <Link to="/basket">Basket</Link>
-                </li>
-                <li>
-                  <Link to="/order-list">Order List</Link>
-                </li>
-                <li>
-                  <Link to="/product/2">Product 2</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </Router>
       </ProductContextProvider>
     </ThemeProvider>
