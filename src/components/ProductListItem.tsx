@@ -1,8 +1,10 @@
+
 import React, { useState } from "react";
 import styled from "styled-components";
 
 import { Product } from "../Product";
 import LinkButton from "./LinkButton";
+
 import Button from "./Button";
 import {
   ContentText,
@@ -27,6 +29,7 @@ const ProductListItem: React.FC<Product> = ({
   category,
 }) => {
   const url = `/product/${id}`;
+
   const [inputValue, setInputValue] = useState<number>(1);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,6 +58,7 @@ const ProductListItem: React.FC<Product> = ({
       setInputValue((prevValue) => prevValue - 1);
     }
   };
+
 
   return (
     <StyledProductListItem>
@@ -160,6 +164,7 @@ const AddToBasket = styled.div`
     height: 50px;
     width: 50px;
   }
+
 `;
 const ProductImage = styled.div`
   height: 230px;

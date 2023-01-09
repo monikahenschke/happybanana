@@ -5,6 +5,7 @@ export const GlobalTheme = {
     black: "#000000",
     gray: "#f3f3f3",
   },
+
   fonts: {
     default: "Montserrat, sans-serif",
     special: "Acme, sans-serif",

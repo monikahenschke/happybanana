@@ -44,7 +44,7 @@ const StyledButton = styled.button<{ variant?: string }>`
       }
     `}
   ${({ variant }) =>
-    variant === "transparent" &&
+    (variant === "transparent" || "logo") &&
     css`
       background-color: transparent;
       color: ${({ theme }) => theme.colors.black};
@@ -60,6 +60,5 @@ const IconWrapper = styled.div<{ variant?: string }>`
   align-items: center;
   max-width: 35px;
   max-height: 35px;
-`;
 
 export default Button;

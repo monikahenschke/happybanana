@@ -26,7 +26,6 @@ export const PriceText = styled.span`
 
 export const LogoText = styled.h1`
   font-family: ${({ theme }) => theme.fonts.special};
-
   font-size: 27px;
   color: ${({ theme }) => theme.colors.black};
 `;
@@ -51,3 +50,4 @@ export const PaddingTop10 = styled.div`
 export const PaddingTop5 = styled.div`
   padding-top: 5px;
 `;
+

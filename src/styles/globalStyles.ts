@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { GlobalTheme } from "./globalTheme";
 
+
 export const GlobalStyles = createGlobalStyle`
 
   html {
@@ -18,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     max-width: 1920px;
   }
+
 
   body, #root {
     width: 100%;
