@@ -78,6 +78,10 @@ const FilterButtons = styled.div`
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+
+  button {
+    padding: 6px 10px;
+  }
 `;
 
 export default Filters;
