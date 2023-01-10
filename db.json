@@ -7,7 +7,8 @@
       "price": 7.89,
       "origin": "Polska",
       "image": "kalafior.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "price": 16.99,
       "origin": "RPA",
       "image": "arbuz.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "price": 5.89,
       "origin": "Polska",
       "image": "dynia-hokkaido.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "price": 0.99,
       "origin": "Polska",
       "image": "jablka-reneta-czerwona.jpeg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "price": 12.99,
       "origin": "Polska",
       "image": "Winogrono-cz.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "price": "3,99",
       "origin": "Polska",
       "image": "por.png",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "price": 1.29,
       "origin": "Polska",
       "image": "jablko-gala.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "price": 9.99,
       "origin": "Brazylia",
       "image": "czy-pies-moze-jesc-banany.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "price": 22.5,
       "origin": "Polska",
       "image": "sezon-na-truskawki.jpeg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "price": 1.15,
       "origin": "Polska",
       "image": "goldstar.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "price": 3.99,
       "origin": "Polska",
       "image": "brokul.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "price": 4.49,
       "origin": "Polska",
       "image": "Marchewka.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "price": 11.99,
       "origin": "Polska",
       "image": "pietruszka.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "price": 7.79,
       "origin": "Polska",
       "image": "wloszczyzna1.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "price": 1.29,
       "origin": "Polska",
       "image": "szczypiorek.png",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "price": 39.99,
       "origin": "Australia",
       "image": "Kurkuma-wlasciwosci.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "price": 26.99,
       "origin": "Polska",
       "image": "imbir.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "price": 4.49,
       "origin": "Włochy",
       "image": "mandarynki.png",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "price": 11.99,
       "origin": "Polska",
       "image": "swiezy-czosnek.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 20,
@@ -178,7 +197,8 @@
       "price": 3.99,
       "origin": "Polska",
       "image": "gruszki.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 21,
@@ -187,7 +207,8 @@
       "price": 7.89,
       "origin": "Polska",
       "image": "kalafior.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 22,
@@ -196,7 +217,8 @@
       "price": 16.99,
       "origin": "RPA",
       "image": "arbuz.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 23,
@@ -205,7 +227,8 @@
       "price": 5.89,
       "origin": "Polska",
       "image": "dynia-hokkaido.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 24,
@@ -214,7 +237,8 @@
       "price": 0.99,
       "origin": "Polska",
       "image": "jablka-reneta-czerwona.jpeg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 25,
@@ -223,7 +247,8 @@
       "price": 12.99,
       "origin": "Polska",
       "image": "Winogrono-cz.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 26,
@@ -232,7 +257,8 @@
       "price": "3,99",
       "origin": "Polska",
       "image": "por.png",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 27,
@@ -241,7 +267,8 @@
       "price": 1.29,
       "origin": "Polska",
       "image": "jablko-gala.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 28,
@@ -250,7 +277,8 @@
       "price": 9.99,
       "origin": "Brazylia",
       "image": "czy-pies-moze-jesc-banany.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 29,
@@ -259,7 +287,8 @@
       "price": 22.5,
       "origin": "Polska",
       "image": "sezon-na-truskawki.jpeg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 30,
@@ -268,7 +297,8 @@
       "price": 1.15,
       "origin": "Polska",
       "image": "goldstar.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 31,
@@ -277,7 +307,8 @@
       "price": 3.99,
       "origin": "Polska",
       "image": "brokul.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 32,
@@ -286,7 +317,8 @@
       "price": 4.49,
       "origin": "Polska",
       "image": "Marchewka.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 33,
@@ -295,7 +327,8 @@
       "price": 11.99,
       "origin": "Polska",
       "image": "pietruszka.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 34,
@@ -304,7 +337,8 @@
       "price": 7.79,
       "origin": "Polska",
       "image": "wloszczyzna1.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 35,
@@ -313,7 +347,8 @@
       "price": 1.29,
       "origin": "Polska",
       "image": "szczypiorek.png",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 36,
@@ -322,7 +357,8 @@
       "price": 39.99,
       "origin": "Australia",
       "image": "Kurkuma-wlasciwosci.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 37,
@@ -331,7 +367,8 @@
       "price": 26.99,
       "origin": "Polska",
       "image": "imbir.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 38,
@@ -340,7 +377,8 @@
       "price": 4.49,
       "origin": "Włochy",
       "image": "mandarynki.png",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 39,
@@ -349,7 +387,8 @@
       "price": 11.99,
       "origin": "Polska",
       "image": "swiezy-czosnek.jpg",
-      "category": "warzywo"
+      "category": "warzywo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     },
     {
       "id": 40,
@@ -358,7 +397,8 @@
       "price": 3.99,
       "origin": "Polska",
       "image": "gruszki.jpg",
-      "category": "owoc"
+      "category": "owoc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
     }
   ],
   "test1": [{ "id": 1, "body": "some comment", "postId": 1 }],

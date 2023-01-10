@@ -7,7 +7,7 @@ export interface ProductsContextProps {
   setProductListLS: (products: Product[]) => void;
   refreshListLS: () => void;
   getProductListLS: () => Product[];
-  //findOne : () => {} as Product;
+  findOne: (id: number) => Promise<Product>;
 }
 
 export const ProductContext = createContext<ProductsContextProps>(
@@ -38,6 +38,10 @@ export const useProducts = () => {
       });
   };
 
+  const findOne: ProductsContextProps["findOne"] = (id) => {
+    return fetch(getURI(`products/${id}`)).then((response) => response.json());
+  };
+
   const setProductListLS: ProductsContextProps["setProductListLS"] = (
     // function sets products to local storage.
     products: Product[]
@@ -48,11 +52,11 @@ export const useProducts = () => {
   const refreshListLS: ProductsContextProps["refreshListLS"] = () => {
     // check if products are in local storage and, if not, then use fetchProductList() and setProductListLS.
     const productsLS = getProductListLS();
-    // if (!productsLS) {
-    fetchProductList().then((products: Product[]) => {
-      setProductListLS(products);
-    });
-    // }
+    if (!productsLS) {
+      fetchProductList().then((products: Product[]) => {
+        setProductListLS(products);
+      });
+    }
   };
   const getProductListLS: ProductsContextProps["getProductListLS"] = () => {
     const productsLS = localStorage.getItem("products");
@@ -66,5 +70,6 @@ export const useProducts = () => {
     setProductListLS,
     refreshListLS,
     getProductListLS,
+    findOne,
   };
 };
