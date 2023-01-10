@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { useProductContext } from "../services/ProductContext";
 import { Product } from "../Product";
-import { Pagination } from "./Pagination";
+import Pagination from "../components/Pagination";
 import { Container } from "../styles/components";
 import ProductListItem from "../components/ProductListItem";
 
-export interface Props {}
-
 const ProductListContainer: React.FC = () => {
   const [productList, setProductList] = useState<Product[]>([]);
+  const [productListCurrentlyShown, setProductListCurrentlyShown] = useState<
+    Product[]
+  >([]);
 
   const {
     fetchProductList,
@@ -33,8 +34,8 @@ const ProductListContainer: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log(productList);
-  }, [productList]);
+    getProductListLS();
+  }, []);
 
   return (
     <>
@@ -52,11 +53,16 @@ const ProductListContainer: React.FC = () => {
                 price={product.price}
                 image={product.image}
                 category={product.category}
+                description={product.description}
               />
             ))}
         </ProductList>
       </Container>
-      {/* <Pagination /> */}
+      <Pagination
+        itemsPerPage={8}
+        itemsList={productList}
+        setItemsListCurrentlyShown={setProductListCurrentlyShown}
+      />
     </>
   );
 };
