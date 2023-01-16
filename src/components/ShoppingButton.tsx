@@ -4,13 +4,16 @@ import React, { useState } from "react";
 import IconMinus from "../assets/icons/minus.svg";
 import IconPlus from "../assets/icons/plus.svg";
 import IconBasket from "../assets/icons/basket.png";
+import { useProductContext } from "../services/ProductContext";
 
 import Button from "./Button";
 
-type ShoppingButtonProps = {};
+type ShoppingButtonProps = { productId: number };
 
-const ShoppingButton: React.FC = () => {
+const ShoppingButton = ({ productId }: ShoppingButtonProps) => {
   const [inputValue, setInputValue] = useState<number>(1);
+
+  const { addToBasket } = useProductContext();
 
   return (
     <>
@@ -35,9 +38,16 @@ const ShoppingButton: React.FC = () => {
           +
         </Button>
       </StyledShoppingButton>
-      <AddToBasket>
-        <Button IconSrc={IconBasket}>Add to basket</Button>
-      </AddToBasket>
+      <AddToBasketButton>
+        <Button
+          handleClick={() =>
+            addToBasket({ productId: productId, quantity: inputValue })
+          }
+          IconSrc={IconBasket}
+        >
+          Add to basket
+        </Button>
+      </AddToBasketButton>
     </>
   );
 };
@@ -99,7 +109,7 @@ const StyledShoppingButton = styled.div`
     }
   }
 `;
-const AddToBasket = styled.div`
+const AddToBasketButton = styled.div`
   button {
     margin: 0;
     margin-left: 10px;

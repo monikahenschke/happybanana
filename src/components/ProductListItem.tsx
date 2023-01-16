@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Product } from "../Product";
+import { Product } from "../models/ProductModel";
 import LinkButton from "./LinkButton";
 
 import {
@@ -20,7 +20,7 @@ const ProductListItem: React.FC<Product> = ({
   id,
   title,
   origin,
-  quantity,
+  unit: quantity,
   price,
   image,
   category,
@@ -56,7 +56,7 @@ const ProductListItem: React.FC<Product> = ({
         </ProductName>
         <PaddingVertical20>
           <FlexCenter>
-            <ShoppingButton />
+            <ShoppingButton productId={Number(id)} />
           </FlexCenter>
         </PaddingVertical20>
       </div>

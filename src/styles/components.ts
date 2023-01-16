@@ -15,6 +15,10 @@ export const ContentText = styled.span`
   }
 `;
 
+export const ContentTextBold = styled(ContentText)`
+  font-weight: 600;
+`;
+
 export const ContentTextSmall = styled(ContentText)`
   font-size: 13px;
 `;
@@ -60,4 +64,8 @@ export const PaddingTop10 = styled.div`
 
 export const PaddingTop5 = styled.div`
   padding-top: 5px;
+`;
+
+export const BorderBottom = styled.div`
+  border-bottom: 1px solid ${({ theme }) => theme.colors.black};
 `;

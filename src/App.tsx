@@ -25,10 +25,10 @@ export const AppRoutes = () => (
 function App() {
   return (
     <ThemeProvider theme={GlobalTheme}>
+      <GlobalStyles />
+      <GlobalFontStyles />
       <ProductContextProvider>
         <Router>
-          <GlobalStyles />
-          <GlobalFontStyles />
           <Header />
           <AppRoutes />
           <Footer />
