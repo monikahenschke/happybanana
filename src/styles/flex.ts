@@ -12,3 +12,7 @@ export const FlexCenter = styled(Flex)`
 export const FlexSpaceBetween = styled(Flex)`
   justify-content: space-between;
 `;
+
+export const FlexColumn = styled(Flex)`
+  flex-direction: column;
+`;

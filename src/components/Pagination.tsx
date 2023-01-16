@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useState } from "react";
 import styled from "styled-components";
 
-import { Product } from "../Product";
+import { Product } from "../models/ProductModel";
 import Button from "./Button";
 import LeftArrow from "../assets/icons/left-arrow.png";
 import RightArrow from "../assets/icons/right-arrow.png";

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
 import { useProductContext } from "../services/ProductContext";
-import { Product as ProductModel } from "../Product";
+import { Product as ProductModel } from "../models/ProductModel";
 import { Container } from "../styles/components";
 import { ContentText, ProductCardTitle, PriceText } from "../styles/components";
 import ShoppingButton from "./ShoppingButton";
@@ -14,13 +14,13 @@ type ParamTypes = {
 };
 
 const ProductCard: React.FC = () => {
-  const { findOne } = useProductContext();
+  const { findOneProduct } = useProductContext();
   const { id } = useParams<ParamTypes>();
   const [Product, setProduct] = useState<ProductModel>();
 
   useEffect(() => {
     if (id) {
-      findOne(+id).then((product) => setProduct(product));
+      findOneProduct(+id).then((product) => setProduct(product));
     }
   }, [id]);
 
@@ -38,13 +38,13 @@ const ProductCard: React.FC = () => {
         <ProductInfo>
           <ProductCardDescription>
             <ProductCardTitle>
-              {Product?.title}, {Product?.quantity}
+              {Product?.title}, {Product?.unit}
             </ProductCardTitle>
             <ContentText>{Product?.description}</ContentText>
           </ProductCardDescription>
           <PriceText>{Product?.price} zł</PriceText>
           <Flex>
-            <ShoppingButton />
+            <ShoppingButton productId={Number(id)} />
           </Flex>
         </ProductInfo>
       </StyledProductCard>
