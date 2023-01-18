@@ -1,16 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 
 import { ProductCardTitle } from "../styles/components";
 
+import { useProductContext } from "../services/ProductContext";
 import BasketForm from "./BasketForm";
 import { Container } from "../styles/components";
 import { FlexCenter } from "../styles/flex";
 import BasketSummary from "./BasketSummary";
+
 import { User } from "../models/UserModel";
+import { Order } from "../models/OrderModel";
 
 const Basket = () => {
+  const navigate = useNavigate();
+  const { saveNewOrder, basketProductsSummary, finalBasketPrice } =
+    useProductContext();
+  const navigateToOrderList = () => navigate("/orders");
+
   const {
     register,
     handleSubmit,
@@ -19,7 +28,15 @@ const Basket = () => {
   } = useForm<User>({ mode: "onChange" });
 
   const onSubmit = (data: User) => {
-    console.log(data);
+    if (basketProductsSummary) {
+      let orderData: Order = {
+        id: Date.now(),
+        user: data,
+        products: basketProductsSummary,
+        price: finalBasketPrice,
+      };
+      saveNewOrder(orderData).then(navigateToOrderList);
+    }
   };
 
   return (
@@ -46,7 +63,7 @@ const Basket = () => {
 const StyledBasket = styled.div`
   flex-grow: 1;
   margin-top: 35px;
-  margin: 30px 0;
+  margin-bottom: 30px;
 `;
 
 const StyledForm = styled.form`

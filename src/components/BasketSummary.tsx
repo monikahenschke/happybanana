@@ -15,7 +15,7 @@ interface BasketSummaryProps {
 const BasketSummary = ({ children }: BasketSummaryProps) => {
   const {
     removeProductFromBasket,
-    productBasketSummary,
+    basketProductsSummary,
     finalBasketPrice,
     refreshBasketSummary,
   } = useProductContext();
@@ -45,8 +45,8 @@ const BasketSummary = ({ children }: BasketSummaryProps) => {
             </Column>
             <Column></Column>
           </Row>
-          {productBasketSummary &&
-            productBasketSummary.map((item, key) => (
+          {basketProductsSummary &&
+            basketProductsSummary.map((item, key) => (
               <Row key={key}>
                 <Column>
                   {item.product.title}, {item.product.unit}

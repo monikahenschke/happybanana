@@ -1,34 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Product } from "../models/ProductModel";
 import LinkButton from "./LinkButton";
 
-import {
-  ContentText,
-  ContentTextSmall,
-  PriceText,
-  PaddingTopBottom20,
-  PaddingTopBottom5,
-  PaddingTop5,
-} from "../styles/components";
+import { ContentText, PaddingTopBottom10 } from "../styles/components";
 import { FlexCenter } from "../styles/flex";
 
-import ShoppingButton from "./ShoppingButton";
-
-const ProductListItem: React.FC<Product> = ({
+interface OrderListProductItemProps {
+  id: number;
+  title: string;
+  origin: string;
+  unit: string;
+  price: number;
+  image: string;
+  quantity: number;
+}
+const OrderListProductItem: React.FC<OrderListProductItemProps> = ({
   id,
   title,
   origin,
   unit,
-  price,
   image,
-  category,
+  price,
+  quantity,
 }) => {
   const url = `/product/${id}`;
 
   return (
-    <StyledProductListItem>
+    <StyledOrderListProductItem>
       <ProductImageCntainer>
         <LinkButton to={url}>
           <ProductImage>
@@ -44,32 +43,26 @@ const ProductListItem: React.FC<Product> = ({
             </ContentText>
           </LinkButton>
           <FlexCenter>
-            <PaddingTopBottom5>
-              <ContentTextSmall>{origin}</ContentTextSmall>
-            </PaddingTopBottom5>
+            <ContentText>{price} zł</ContentText>
           </FlexCenter>
           <FlexCenter>
-            <PaddingTop5>
-              <PriceText>{price} zł</PriceText>
-            </PaddingTop5>
+            <PaddingTopBottom10>
+              <ContentText>{quantity}x</ContentText>
+            </PaddingTopBottom10>
           </FlexCenter>
         </ProductName>
-        <PaddingTopBottom20>
-          <FlexCenter>
-            <ShoppingButton productId={Number(id)} />
-          </FlexCenter>
-        </PaddingTopBottom20>
       </div>
-    </StyledProductListItem>
+    </StyledOrderListProductItem>
   );
 };
 
-const StyledProductListItem = styled.li`
-  width: 24%;
+const StyledOrderListProductItem = styled.li`
+  width: calc(100% / 6 - 10px);
   display: flex;
   flex-direction: column;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   margin-bottom: 12px;
+  margin: 5px;
 `;
 
 const ProductImageCntainer = styled.div`
@@ -90,7 +83,7 @@ const ProductName = styled.div`
 `;
 
 const ProductImage = styled.div`
-  height: 230px;
+  height: 150px;
   width: 100%;
 
   > img {
@@ -100,4 +93,4 @@ const ProductImage = styled.div`
   }
 `;
 
-export default ProductListItem;
+export default OrderListProductItem;
