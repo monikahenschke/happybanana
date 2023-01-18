@@ -7,18 +7,18 @@ import LinkButton from "./LinkButton";
 import { useProductContext } from "../services/ProductContext";
 
 const ActionButtons = () => {
-  const { basketState } = useProductContext();
+  const { quantityBasketProducts } = useProductContext();
 
   return (
     <Flex>
       <LinkButton
-        to="/order-list"
+        to="/orders"
         variant="transparent"
         IconSrc={OrderListImg}
         alt="Lista zamówień"
       ></LinkButton>
       <div>
-        <Basket content={basketState}>
+        <Basket content={quantityBasketProducts}>
           <LinkButton
             to="/basket"
             variant="transparent"

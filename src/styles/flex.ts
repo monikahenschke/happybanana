@@ -16,3 +16,6 @@ export const FlexSpaceBetween = styled(Flex)`
 export const FlexColumn = styled(Flex)`
   flex-direction: column;
 `;
+export const FlexEnd = styled(Flex)`
+  justify-content: flex-end;
+`;

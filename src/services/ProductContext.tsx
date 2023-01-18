@@ -8,7 +8,8 @@ import {
 } from "react";
 import { Product } from "../models/ProductModel";
 import { BasketProduct } from "../models/BasketProductModel";
-import { BasketSummaryProduct } from "../models/ProductBasketSummaryModel";
+import { BasketProductSummary } from "../models/BasketProductSummaryModel";
+import { Order } from "../models/OrderModel";
 
 export const getURI = (endpoint: string) => `http://localhost:4000/${endpoint}`;
 
@@ -18,54 +19,75 @@ export interface ProductsContextProps {
   addToBasket: (basketProduct: BasketProduct) => void;
   setBasketLS: (productAddedToBasket: BasketProduct[]) => void;
   getBasketLS: () => BasketProduct[];
-  basketState: number;
-  productBasketSummary: BasketSummaryProduct[];
+  quantityBasketProducts: number;
+  basketProductsSummary: BasketProductSummary[];
   removeProductFromBasket: (id: number) => void;
   finalBasketPrice: number;
   refreshBasketSummary: () => Promise<void>;
+  saveNewOrder: (saveNewOrder: Order) => Promise<void>;
+  fetchOrderList: () => Promise<Order[]>;
 }
 
 export const ProductContext = createContext<ProductsContextProps>(
   {} as ProductsContextProps
 );
 
+const setBasketLS: ProductsContextProps["setBasketLS"] = (
+  productsAddedToBasket
+) => {
+  localStorage.setItem("basket", JSON.stringify(productsAddedToBasket));
+};
+
+const getBasketLS: ProductsContextProps["getBasketLS"] = () => {
+  const productsBasketLS = localStorage.getItem("basket");
+  if (typeof productsBasketLS === "string") {
+    return JSON.parse(productsBasketLS);
+  }
+
+  return [];
+};
+
 export const ProductContextProvider: FC<any> = ({ children }) => {
-  const [basketState, setBasketState] = useState<number>(0);
-  const [productBasketSummary, setProductBasketSummary] = useState<
-    BasketSummaryProduct[]
+  const [quantityBasketProducts, setQuantityBasketProducts] =
+    useState<number>(0);
+  const [basketProductsSummary, setBasketProductsSummary] = useState<
+    BasketProductSummary[]
   >([]);
   const [finalBasketPrice, setFinalBasketPrice] = useState<number>(0);
+  const basketLS = getBasketLS();
+  const [basketProducts, setBasketProducts] =
+    useState<BasketProduct[]>(basketLS);
 
   useEffect(() => {
-    setBasketState(calculateBasketState());
+    return () => {
+      setBasketLS(basketProducts);
+    };
   }, []);
 
-  const refreshBasketSummary = async () => {
-    const basketLS = getBasketLS();
-    if (!basketLS) return;
-    let finalPrice = 0;
+  useEffect(() => {
+    setQuantityBasketProducts(calculateBasketProductsQuantity());
+  }, [basketProducts]);
 
-    const unresolvedBasketSummaryProducts: Promise<BasketSummaryProduct>[] =
-      basketLS.map(async (basketProduct) => {
+  const refreshBasketSummary = async () => {
+    if (!basketProducts) return;
+    let finalPrice = 0;
+    const unresolvedBasketSummaryProducts: Promise<BasketProductSummary>[] =
+      basketProducts.map(async (basketProduct) => {
         const productFromDb = await findOneProduct(basketProduct.productId);
         finalPrice += productFromDb.price * basketProduct.quantity;
-
         return { product: productFromDb, quantity: basketProduct.quantity };
       });
-
     //Promise<BasketSummaryProduct>[]  ===>  BasketSummaryProduct[]
-
     const basketSummaryProducts = await Promise.all(
       unresolvedBasketSummaryProducts
     );
-
-    setProductBasketSummary(basketSummaryProducts);
+    setBasketProductsSummary(basketSummaryProducts);
     setFinalBasketPrice(finalPrice);
   };
-  const calculateBasketState = () => {
-    const basketLS = getBasketLS();
+
+  const calculateBasketProductsQuantity = () => {
     let quantityCounter = 0;
-    basketLS.forEach((el) => {
+    basketProducts.forEach((el) => {
       quantityCounter = quantityCounter + el.quantity;
     });
 
@@ -79,7 +101,7 @@ export const ProductContextProvider: FC<any> = ({ children }) => {
         return response.json();
       })
       .catch((err) => {
-        console.error(`Fetch failed. Msg: ${err}`);
+        console.error(`Fetch products failed. Msg: ${err}`);
       });
   };
 
@@ -89,51 +111,60 @@ export const ProductContextProvider: FC<any> = ({ children }) => {
 
   const removeProductFromBasket: ProductsContextProps["removeProductFromBasket"] =
     (id) => {
-      const basketLS = getBasketLS();
-
-      const newProductBasketSummary = productBasketSummary.filter(
+      const newProductBasketSummary = basketProductsSummary.filter(
         (el) => el.product.id !== id
       );
+      const newBasketLS = basketProducts.filter((el) => el.productId !== id);
 
-      const newBasketLS = basketLS.filter((el) => el.productId !== id);
-
-      setProductBasketSummary(newProductBasketSummary);
-      setBasketLS(newBasketLS);
-      setBasketState(calculateBasketState());
+      setBasketProductsSummary(newProductBasketSummary);
+      setBasketProducts(newBasketLS);
+      setQuantityBasketProducts(calculateBasketProductsQuantity());
     };
 
-  const setBasketLS: ProductsContextProps["setBasketLS"] = (
-    productAddedToBasket
+  const addToBasket: ProductsContextProps["addToBasket"] = (
+    basketProductToAdd
   ) => {
-    localStorage.setItem("basket", JSON.stringify(productAddedToBasket));
-  };
+    const basketProductsCopy = [...basketProducts];
 
-  const getBasketLS: ProductsContextProps["getBasketLS"] = () => {
-    const productsBasketLS = localStorage.getItem("basket");
-    if (typeof productsBasketLS === "string") {
-      return JSON.parse(productsBasketLS);
-    }
-
-    return [];
-  };
-
-  const addToBasket: ProductsContextProps["addToBasket"] = (basketProduct) => {
-    const basketLS = getBasketLS();
-
-    const itemFromBasket = basketLS.find(
-      (item) => item.productId === basketProduct.productId
+    const itemFromBasket = basketProductsCopy.find(
+      (item) => item.productId === basketProductToAdd.productId
     );
 
     if (itemFromBasket) {
-      itemFromBasket.quantity += basketProduct.quantity;
+      itemFromBasket.quantity += basketProductToAdd.quantity;
     } else {
-      basketLS.push(basketProduct);
+      basketProductsCopy.push(basketProductToAdd);
     }
-
-    setBasketLS(basketLS);
-    setBasketState(calculateBasketState());
+    setBasketProducts(basketProductsCopy);
+    setQuantityBasketProducts(calculateBasketProductsQuantity());
   };
 
+  const saveNewOrder: ProductsContextProps["saveNewOrder"] = (orderToSave) => {
+    return fetch(getURI("orders"), {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(orderToSave),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setBasketProducts([]);
+      })
+      .catch((err) => {
+        console.error(`Fetch failed. Msg: ${err}`);
+      });
+  };
+
+  const fetchOrderList: ProductsContextProps["fetchOrderList"] = () => {
+    return fetch(getURI("orders"))
+      .then((response) => {
+        return response.json();
+      })
+      .catch((err) => {
+        console.error(`Fetch orders failed. Msg: ${err}`);
+      });
+  };
   const value = useMemo(
     () => ({
       fetchProductList,
@@ -141,16 +172,18 @@ export const ProductContextProvider: FC<any> = ({ children }) => {
       addToBasket,
       setBasketLS,
       getBasketLS,
-      basketState,
-      setBasketState,
-      calculateBasketState,
+      quantityBasketProducts,
+      setQuantityBasketProducts,
+      calculateBasketProductsQuantity,
       removeProductFromBasket,
-      productBasketSummary,
-      setProductBasketSummary,
+      basketProductsSummary,
+      setBasketProductsSummary,
       finalBasketPrice,
       refreshBasketSummary,
+      saveNewOrder,
+      fetchOrderList,
     }),
-    [basketState, finalBasketPrice, productBasketSummary]
+    [quantityBasketProducts, finalBasketPrice, basketProductsSummary]
   );
 
   return (

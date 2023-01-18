@@ -86,9 +86,9 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                 type="text"
                 {...register("email", {
                   required: "required",
-                  minLength: {
-                    value: 2,
-                    message: "email should have @",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "invalid email address",
                   },
                 })}
               ></StyledInput>
@@ -114,10 +114,6 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   type="text"
                   {...register("postcode", {
                     required: "required",
-                    minLength: {
-                      value: 2,
-                      message: "too short firstname",
-                    },
                   })}
                 ></StyledInput>
                 <StyledLabel
@@ -141,10 +137,6 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   type="text"
                   {...register("city", {
                     required: "required",
-                    minLength: {
-                      value: 2,
-                      message: "too short city",
-                    },
                   })}
                 ></StyledInput>
                 <StyledLabel
@@ -170,10 +162,6 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   type="text"
                   {...register("street", {
                     required: "required",
-                    minLength: {
-                      value: 2,
-                      message: "too short street",
-                    },
                   })}
                 ></StyledInput>
                 <StyledLabel
@@ -181,7 +169,7 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   htmlFor="street"
                   className={street && "hide"}
                 >
-                  {!postcode && "ULICA*"}
+                  {!street && "ULICA*"}
                 </StyledLabel>
               </InputWrapper>
               <ErrorMessage id="streetErrorMessage">
@@ -197,10 +185,6 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   type="text"
                   {...register("housenumber", {
                     required: "required",
-                    minLength: {
-                      value: 2,
-                      message: "it should be a number!",
-                    },
                   })}
                 ></StyledInput>
                 <StyledLabel
@@ -208,7 +192,7 @@ const BasketForm = ({ watch, errors, register }: BasketFormProps) => {
                   htmlFor="housenumber"
                   className={housenumber && "hide"}
                 >
-                  {!city && "NR DOMU*"}
+                  {!housenumber && "NR DOMU*"}
                 </StyledLabel>
               </InputWrapper>
               <ErrorMessage id="housenumberMessage">

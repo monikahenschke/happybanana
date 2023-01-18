@@ -1,10 +1,24 @@
 import React from "react";
 
-const OrderList = () => {
+import { ProductCardTitle } from "../styles/components";
+import { FlexColumn, FlexCenter } from "../styles/flex";
+
+interface OrderListProps {
+  children: React.ReactNode;
+}
+
+const OrderList: React.FC<OrderListProps> = ({ children }) => {
   return (
-    <div className="container">
-      <h1>OrderList</h1>
-    </div>
+    <>
+      <FlexCenter>
+        <ProductCardTitle>Lista zamówień</ProductCardTitle>
+      </FlexCenter>
+      <FlexColumn>
+        {React.Children.map(children, (child) => (
+          <>{child}</>
+        ))}
+      </FlexColumn>
+    </>
   );
 };
 

@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { GlobalTheme } from "./globalTheme";
 
-
 export const GlobalStyles = createGlobalStyle`
+
+
 
   html {
     font-size: 16px;
@@ -50,4 +51,6 @@ a {
 }
 
 transition: all 0.5s linear;
+
+
 `;

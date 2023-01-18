@@ -11,7 +11,7 @@ type ButtonProps = {
 
 const Button = ({ children, IconSrc, variant, handleClick }: ButtonProps) => {
   return (
-    <StyledButton variant={variant} onClick={handleClick}>
+    <StyledButton type="button" variant={variant} onClick={handleClick}>
       {IconSrc ? (
         <IconWrapper variant={variant}>
           <img src={IconSrc} alt={children} />

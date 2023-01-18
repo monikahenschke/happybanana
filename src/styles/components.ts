@@ -52,11 +52,14 @@ export const ProductCardTitle = styled.h2`
     font-size: 24px;
   }
 `;
-export const PaddingVertical20 = styled.div`
+export const PaddingTopBottom20 = styled.div`
   padding: 20px 0;
 `;
-export const PaddingVertical5 = styled.div`
+export const PaddingTopBottom5 = styled.div`
   padding: 5px 0;
+`;
+export const PaddingTopBottom10 = styled.div`
+  padding: 10px 0;
 `;
 export const PaddingTop10 = styled.div`
   padding-top: 10px;
@@ -64,6 +67,13 @@ export const PaddingTop10 = styled.div`
 
 export const PaddingTop5 = styled.div`
   padding-top: 5px;
+`;
+
+export const PaddingBottom5 = styled.div`
+  padding-bottom: 5px;
+`;
+export const PaddingBottom10 = styled.div`
+  padding-bottom: 10px;
 `;
 
 export const BorderBottom = styled.div`
