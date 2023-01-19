@@ -514,7 +514,7 @@
             "id": 9,
             "title": "Truskawki",
             "unit": "1 kg",
-            "price": 22.5,
+            "price": 22.59,
             "origin": "Polska",
             "image": "sezon-na-truskawki.jpeg",
             "category": "owoc",
@@ -630,6 +630,75 @@
         }
       ],
       "price": 116.55
+    },
+    {
+      "id": 1674051773691,
+      "user": {
+        "firstname": "Anna",
+        "lastname": "Nowak",
+        "email": "annanowak@gmail.com",
+        "postcode": "11-432",
+        "city": "Nowakowo",
+        "street": "Nowakowska",
+        "housenumber": "11"
+      },
+      "products": [
+        {
+          "product": {
+            "id": 9,
+            "title": "Truskawki",
+            "unit": "1 kg",
+            "price": 22.5,
+            "origin": "Polska",
+            "image": "sezon-na-truskawki.jpeg",
+            "category": "owoc",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
+          },
+          "quantity": 3
+        },
+        {
+          "product": {
+            "id": 10,
+            "title": "Jabłko Goldstar",
+            "unit": "1 sztuka",
+            "price": 1.15,
+            "origin": "Polska",
+            "image": "goldstar.jpg",
+            "category": "owoc",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
+          },
+          "quantity": 1
+        }
+      ],
+      "price": 68.65
+    },
+    {
+      "id": 1674051844793,
+      "user": {
+        "firstname": "Alicja",
+        "lastname": "Budyn",
+        "email": "albyd@onet.pl",
+        "postcode": "44-443",
+        "city": "Warszawa",
+        "street": "Dolna",
+        "housenumber": "343"
+      },
+      "products": [
+        {
+          "product": {
+            "id": 8,
+            "title": "Banany",
+            "unit": "5 sztuk",
+            "price": 9.99,
+            "origin": "Brazylia",
+            "image": "czy-pies-moze-jesc-banany.jpg",
+            "category": "owoc",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi lectus, vehicula quis vehicula ut, condimentum in mauris. Curabitur est ex, rhoncus vel quam quis, mollis sollicitudin sapien. Cras eget lectus posuere, convallis quam vel, tempor ante. Suspendisse eu tincidunt felis. Praesent accumsan tincidunt tellus id sodales. Morbi in sodales nulla. Pellentesque lacinia tellus tellus, non iaculis ligula ultricies non. Sed fringilla commodo leo eget ullamcorper. Integer eget iaculis elit. Phasellus sed neque non nisl pharetra tempus vel ut libero. Duis pellentesque odio sit amet sem venenatis luctus. Proin quis tellus dolor. Morbi lacus ex, pretium sed tincidunt at, dictum non tellus. Donec venenatis tellus in odio aliquet pulvinar."
+          },
+          "quantity": 8
+        }
+      ],
+      "price": 79.92
     }
   ]
 }

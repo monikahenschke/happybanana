@@ -9,6 +9,8 @@ import {
   ContentTextSmall,
   PriceText,
   PaddingTopBottom20,
+  PaddingTop5Bottom20,
+  PaddingBottom20,
   PaddingTopBottom5,
   PaddingTop5,
 } from "../styles/components";
@@ -26,7 +28,6 @@ const ProductListItem: React.FC<Product> = ({
   category,
 }) => {
   const url = `/product/${id}`;
-
   return (
     <StyledProductListItem>
       <ProductImageCntainer>
@@ -36,7 +37,7 @@ const ProductListItem: React.FC<Product> = ({
           </ProductImage>
         </LinkButton>
       </ProductImageCntainer>
-      <div>
+      <ProductDetails className="animatedDetails">
         <ProductName>
           <LinkButton to={url}>
             <ContentText>
@@ -49,17 +50,17 @@ const ProductListItem: React.FC<Product> = ({
             </PaddingTopBottom5>
           </FlexCenter>
           <FlexCenter>
-            <PaddingTop5>
+            <PaddingTop5Bottom20>
               <PriceText>{price} zł</PriceText>
-            </PaddingTop5>
+            </PaddingTop5Bottom20>
           </FlexCenter>
         </ProductName>
-        <PaddingTopBottom20>
+        <ProductButtons className="animatedButtons">
           <FlexCenter>
             <ShoppingButton productId={Number(id)} />
           </FlexCenter>
-        </PaddingTopBottom20>
-      </div>
+        </ProductButtons>
+      </ProductDetails>
     </StyledProductListItem>
   );
 };
@@ -70,6 +71,40 @@ const StyledProductListItem = styled.li`
   flex-direction: column;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   margin-bottom: 12px;
+  position: relative;
+
+  &:hover {
+    & .animatedButtons {
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
+    }
+
+    & .animatedDetails {
+      transform: translateY(-70px);
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+    }
+  }
+`;
+
+const ProductDetails = styled.div`
+  background: white;
+  transform: translateY(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+
+  & * {
+    /* will-change: transform; */
+  }
+`;
+const ProductButtons = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  opacity: 0;
+
+  transition: opacity 0.5s ease-out;
 `;
 
 const ProductImageCntainer = styled.div`
@@ -87,6 +122,7 @@ const ProductImageCntainer = styled.div`
 const ProductName = styled.div`
   padding-top: 10px;
   text-align: center;
+  /* will-change: transform; */
 `;
 
 const ProductImage = styled.div`

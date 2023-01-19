@@ -5,6 +5,7 @@ import IconMinus from "../assets/icons/minus.svg";
 import IconPlus from "../assets/icons/plus.svg";
 import IconBasket from "../assets/icons/basket.png";
 import { useProductContext } from "../services/ProductContext";
+import { incrementInput, decrementInput, handleChange } from "../utils";
 
 import Button from "./Button";
 
@@ -14,7 +15,6 @@ const ShoppingButton = ({ productId }: ShoppingButtonProps) => {
   const [inputValue, setInputValue] = useState<number>(1);
 
   const { addToBasket } = useProductContext();
-
   return (
     <>
       <StyledShoppingButton>
@@ -50,39 +50,6 @@ const ShoppingButton = ({ productId }: ShoppingButtonProps) => {
       </AddToBasketButton>
     </>
   );
-};
-
-const decrementInput = (
-  inputValue: number,
-  setInputValue: React.Dispatch<React.SetStateAction<number>>
-) => {
-  if (inputValue === 1) {
-    setInputValue(1);
-  } else {
-    setInputValue((prevValue) => prevValue - 1);
-  }
-};
-
-const incrementInput = (
-  inputValue: number,
-  setInputValue: React.Dispatch<React.SetStateAction<number>>
-) => {
-  if (inputValue >= 15) {
-    setInputValue(15);
-  } else {
-    setInputValue((prevValue) => prevValue + 1);
-  }
-};
-
-const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //TODO
-  // let { value, min, max } = e.target;
-  // let numValue = Number(value);
-  // numValue = Math.max(
-  //   Number(min),
-  //   Math.min(Number(max), Number(value.replace(/\D/, "")))
-  // );
-  // setInputValue(numValue);
 };
 
 const StyledShoppingButton = styled.div`

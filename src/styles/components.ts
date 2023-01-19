@@ -76,6 +76,15 @@ export const PaddingBottom10 = styled.div`
   padding-bottom: 10px;
 `;
 
+export const PaddingBottom20 = styled.div`
+  padding-bottom: 20px;
+`;
+
+export const PaddingTop5Bottom20 = styled.div`
+  padding-top: 5px;
+  padding-bottom: 20px;
+`;
+
 export const BorderBottom = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.black};
 `;
