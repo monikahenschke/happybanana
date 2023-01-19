@@ -8,6 +8,7 @@ import { Container } from "../styles/components";
 import { ContentText, ProductCardTitle, PriceText } from "../styles/components";
 import ShoppingButton from "./ShoppingButton";
 import { Flex, FlexCenter } from "../styles/flex";
+import ProposedProducts from "./ProposedProducts";
 
 type ParamTypes = {
   id: string;
@@ -49,10 +50,9 @@ const ProductCard: React.FC = () => {
         </ProductInfo>
       </StyledProductCard>
 
-      <FlexCenter>
-        <ProductCardTitle>Inne produkty z tej kategorii</ProductCardTitle>
-        {/* TODO - lista produktów z tej samej kategorii */}
-      </FlexCenter>
+      {Product && (
+        <ProposedProducts category={Product.category} productId={Product.id} />
+      )}
     </Container>
   );
 };
