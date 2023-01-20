@@ -59,21 +59,33 @@ const StyledShoppingButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border 0.2s ease-out;
+
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.colors.black};
+    transition: all 0.3s ease-out;
+  }
 
   button {
     background: transparent;
     height: 100%;
     padding: 0;
+    flex-shrink: 0;
+    margin: 0 10px;
   }
   input {
     text-align: center;
     font-family: ${({ theme }) => theme.fonts.default};
+    width: 100%;
 
-    &::-webkit-outer-spin-button,
+    &::-webkit-outer-spin-button, /*Chrome*/
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }
+  }
+  input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
   }
 `;
 const AddToBasketButton = styled.div`
@@ -82,6 +94,13 @@ const AddToBasketButton = styled.div`
     margin-left: 10px;
     height: 50px;
     width: 50px;
+    border: 1px solid transparent;
+    transition: border 0.2s ease-out;
+
+    &:hover {
+      border: 1px solid ${({ theme }) => theme.colors.black};
+      transition: all 0.3s ease-out;
+    }
   }
 `;
 
