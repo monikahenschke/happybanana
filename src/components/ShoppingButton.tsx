@@ -7,7 +7,7 @@ import IconBasket from "../assets/icons/basket.png";
 import { useProductContext } from "../services/ProductContext";
 import { incrementInput, decrementInput, handleChange } from "../utils";
 
-import Button from "./Button";
+import Button from "./Buttons/Button";
 
 type ShoppingButtonProps = { productId: number };
 

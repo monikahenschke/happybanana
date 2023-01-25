@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Product } from "../models/ProductModel";
-import LinkButton from "./LinkButton";
+import { Product } from "../../models/ProductModel";
+import LinkButton from "../Buttons/LinkButton";
 
 import {
   ContentText,
@@ -10,10 +10,10 @@ import {
   PriceText,
   PaddingTop5Bottom20,
   PaddingTopBottom5,
-} from "../styles/components";
-import { FlexCenter } from "../styles/flex";
+} from "../../styles/components";
+import { FlexCenter } from "../../styles/flex";
 
-import ShoppingButton from "./ShoppingButton";
+import ShoppingButton from "../ShoppingButton";
 
 const ProductListItem: React.FC<Product> = ({
   id,
@@ -30,7 +30,7 @@ const ProductListItem: React.FC<Product> = ({
       <ProductImageCntainer>
         <LinkButton to={url}>
           <ProductImage>
-            <img src={require(`../assets/products/${image}`)} alt={title} />
+            <img src={require(`../../assets/products/${image}`)} alt={title} />
           </ProductImage>
         </LinkButton>
       </ProductImageCntainer>

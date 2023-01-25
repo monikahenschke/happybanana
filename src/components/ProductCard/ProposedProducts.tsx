@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { FlexCenter } from "../styles/flex";
+import { FlexCenter } from "../../styles/flex";
 import styled from "styled-components";
-import { ProductCardTitle } from "../styles/components";
-import { useProductContext } from "../services/ProductContext";
-import { Product } from "../models/ProductModel";
-import ProductListItem from "./ProductListItem";
-import ProductList from "./ProductList";
+import { ProductCardTitle } from "../../styles/components";
+import { useProductContext } from "../../services/ProductContext";
+import { Product } from "../../models/ProductModel";
+import ProductListItem from "../ProductList/ProductListItem";
+import ProductList from "../ProductList/ProductList";
 
 type ParamTypes = {
   category: string;

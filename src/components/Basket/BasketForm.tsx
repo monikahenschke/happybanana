@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ProductCardTitle } from "../styles/components";
-import { FlexColumn } from "../styles/flex";
+import { ProductCardTitle } from "../../styles/components";
+import { FlexColumn } from "../../styles/flex";
 
 interface BasketFormProps {
   watch: any;

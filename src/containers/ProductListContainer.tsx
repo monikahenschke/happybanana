@@ -1,11 +1,11 @@
-import Filters from "../components/Filters";
-import ProductList from "../components/ProductList";
+import Filters from "../components/ProductList/Filters";
+import ProductList from "../components/ProductList/ProductList";
 import { useEffect, useState } from "react";
 import { useProductContext } from "../services/ProductContext";
 import { Product } from "../models/ProductModel";
 import { FilterTypeEnum } from "../enums/FilterTypeEnum";
 import { Container } from "../styles/components";
-import ProductListItem from "../components/ProductListItem";
+import ProductListItem from "../components/ProductList/ProductListItem";
 import { sortProductsByParam } from "../utils";
 
 const ProductListContainer: React.FC = () => {

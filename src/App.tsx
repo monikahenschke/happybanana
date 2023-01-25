@@ -4,12 +4,12 @@ import { ThemeProvider } from "styled-components";
 import { GlobalTheme } from "./styles/globalTheme";
 import { GlobalStyles } from "./styles/globalStyles";
 
-import Header from "./components/Header";
-import ProductCard from "./components/ProductCard";
-import Basket from "./components/Basket";
+import Header from "./components/View/Header/Header";
+import ProductCard from "./components/ProductCard/ProductCard";
+import Basket from "./components/Basket/Basket";
 import OrdersListContainer from "./containers/OdersListContainer";
 import ProductListContainer from "./containers/ProductListContainer";
-import Footer from "./components/Footer";
+import Footer from "./components/View/Footer";
 import { ProductContextProvider } from "./services/ProductContext";
 
 export const AppRoutes = () => (

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import HappyBananaText from "./HappyBananaText";
-import Logo from "./Logo";
-import { Container } from "../styles/components";
-import { Flex, FlexCenter } from "../styles/flex";
+import HappyBananaText from "../HappyBananaText";
+import Logo from "../Logo";
+import { Container } from "../../styles/components";
+import { Flex, FlexCenter } from "../../styles/flex";
 
 const Footer = () => {
   return (

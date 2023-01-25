@@ -1,5 +1,5 @@
 import LogoImg from "../assets/logo-hb.png";
-import LinkButton from "./LinkButton";
+import LinkButton from "./Buttons/LinkButton";
 
 const Logo = () => {
   return (

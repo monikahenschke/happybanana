@@ -1,7 +1,7 @@
 import React from "react";
 
-import { ProductCardTitle } from "../styles/components";
-import { FlexColumn, FlexCenter } from "../styles/flex";
+import { ProductCardTitle } from "../../styles/components";
+import { FlexColumn, FlexCenter } from "../../styles/flex";
 
 interface OrderListProps {
   children: React.ReactNode;

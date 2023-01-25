@@ -5,8 +5,8 @@ import { useProductContext } from "../services/ProductContext";
 import { Order } from "../models/OrderModel";
 import { Container } from "../styles/components";
 
-import OrderListItem from "../components/OrderListItem";
-import OrderList from "../components/OrderList";
+import OrderListItem from "../components/Order/OrderListItem";
+import OrderList from "../components/Order/OrderList";
 import { sortOrdersByDate } from "../utils";
 
 const OrdersListContainer = () => {
