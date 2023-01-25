@@ -7,11 +7,18 @@ type ButtonProps = {
   filters?: boolean;
   variant?: string;
   handleClick?: () => void;
+  id?: string;
 };
 
-const Button = ({ children, IconSrc, variant, handleClick }: ButtonProps) => {
+const Button = ({
+  children,
+  IconSrc,
+  variant,
+  handleClick,
+  id,
+}: ButtonProps) => {
   return (
-    <StyledButton type="button" variant={variant} onClick={handleClick}>
+    <StyledButton id={id} type="button" variant={variant} onClick={handleClick}>
       {IconSrc ? (
         <IconWrapper variant={variant}>
           <img src={IconSrc} alt={children} />

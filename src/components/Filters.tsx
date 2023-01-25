@@ -1,25 +1,56 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import Button from "./Button";
+import { useProductContext } from "../services/ProductContext";
 import { FlexCenter } from "../styles/flex";
 import { Container } from "../styles/components";
+import { FilterTypeEnum } from "../enums/FilterTypeEnum";
+import { SortTypeEnum } from "../enums/SortTypeEnum";
 
 const Filters = () => {
+  const { filterState, setFilterState, sortState, setSortState } =
+    useProductContext();
+
+  const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value as SortTypeEnum;
+    setSortState(value);
+  };
+
   return (
     <StyledFilters>
       <Container>
         <FlexCenter>
           <Sorting />
-          <FilterButtons>
-            <Button variant="border">Warzywa</Button>
-            <Button variant="border">Owoce</Button>
+          <FilterButtons active={filterState}>
+            <Button
+              id="all"
+              handleClick={() => setFilterState(FilterTypeEnum.All)}
+              variant="border"
+            >
+              Wszystko
+            </Button>
+            <Button
+              id="warzywo"
+              handleClick={() => setFilterState(FilterTypeEnum.Vegetable)}
+              variant="border"
+            >
+              Warzywa
+            </Button>
+            <Button
+              id="owoc"
+              handleClick={() => setFilterState(FilterTypeEnum.Fruit)}
+              variant="border"
+            >
+              Owoce
+            </Button>
           </FilterButtons>
           <FlexCenter>
             <Sorting>
               <p>sortuj po:</p>
-              <Select>
-                <option>nazwa</option>
-                <option>cena</option>
+              <Select defaultValue={sortState} onChange={selectChange}>
+                <option value={SortTypeEnum.Name}>nazwa</option>
+                <option value={SortTypeEnum.Price}>cena</option>
+                <option value={SortTypeEnum.Origin}>pochodzenie</option>
               </Select>
             </Sorting>
           </FlexCenter>
@@ -73,7 +104,7 @@ const Sorting = styled.div`
   align-items: center;
 `;
 
-const FilterButtons = styled.div`
+const FilterButtons = styled.div<{ active?: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +113,15 @@ const FilterButtons = styled.div`
   button {
     padding: 6px 10px;
   }
+
+  ${({ active }) =>
+    active &&
+    css`
+      & #${active} {
+        background-color: ${({ theme }) => theme.colors.black};
+        color: ${({ theme }) => theme.colors.primary};
+      }
+    `}
 `;
 
 export default Filters;

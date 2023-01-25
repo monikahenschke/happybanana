@@ -1,6 +1,8 @@
 import { Order } from "../models/OrderModel";
 import { BasketProductSummary } from "../models/BasketProductSummaryModel";
 import { BasketProduct } from "../models/BasketProductModel";
+import { Product } from "../models/ProductModel";
+import { SortTypeEnum } from "../enums/SortTypeEnum";
 
 export const decrementInput = (
   inputValue: number,
@@ -64,6 +66,27 @@ export function sortOrdersByDate(orders: Order[]) {
   return orders;
 }
 
+export function sortProductsByParam(products: Product[], param: SortTypeEnum) {
+  switch (param) {
+    case SortTypeEnum.Origin:
+      products.sort(function (a, b) {
+        return a.origin.localeCompare(b.origin);
+      });
+      break;
+    case SortTypeEnum.Price:
+      products.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      break;
+    case SortTypeEnum.Name:
+      products.sort(function (a, b) {
+        return a.title.localeCompare(b.title);
+      });
+      break;
+  }
+  return products;
+}
+
 export const calculateBasketFinalPrice = (
   products: BasketProductSummary[],
   setFinalBasketPrice: React.Dispatch<React.SetStateAction<number>>
@@ -97,4 +120,9 @@ export const getBasketLS = () => {
 
 export const setBasketLS = (productsAddedToBasket: BasketProduct[]) => {
   localStorage.setItem("basket", JSON.stringify(productsAddedToBasket));
+};
+
+export const findProductById = (id: number, productList: Product[]) => {
+  const result = productList.find((product) => product.id === id);
+  return result;
 };

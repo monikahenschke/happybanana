@@ -21,7 +21,9 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 1920px;
   }
 
-
+  button {
+    font-family: ${GlobalTheme.fonts.default};
+  }
   body, #root {
     width: 100%;
   }
