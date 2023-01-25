@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import LinkButton from "./LinkButton";
+import LinkButton from "../Buttons/LinkButton";
 
-import { ContentText, PaddingTopBottom10 } from "../styles/components";
-import { FlexCenter } from "../styles/flex";
+import { ContentText, PaddingTopBottom10 } from "../../styles/components";
+import { FlexCenter } from "../../styles/flex";
 
 interface OrderListProductItemProps {
   id: number;
@@ -31,7 +31,7 @@ const OrderListProductItem: React.FC<OrderListProductItemProps> = ({
       <ProductImageCntainer>
         <LinkButton to={url}>
           <ProductImage>
-            <img src={require(`../assets/products/${image}`)} alt={title} />
+            <img src={require(`../../assets/products/${image}`)} alt={title} />
           </ProductImage>
         </LinkButton>
       </ProductImageCntainer>

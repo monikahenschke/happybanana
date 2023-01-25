@@ -1,28 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 
-import OrderListProductItem from "../components/OrderListProductItem";
-import IconDot from "../assets/icons/point.svg";
+import OrderListProductItem from "./OrderListProductItem";
+import IconDot from "../../assets/icons/point.svg";
 
-import { Order } from "../models/OrderModel";
+import { Order } from "../../models/OrderModel";
 
 import {
   ContentText,
   PaddingTop5,
-  PaddingTopBottom5,
   PriceText,
   ContentTextBold,
   PaddingBottom10,
-} from "../styles/components";
-import { getDate } from "../utils";
+} from "../../styles/components";
+import { getDate } from "../../utils";
 
 import {
   FlexColumn,
   FlexEnd,
-  Flex,
   FlexCenter,
   FlexSpaceBetween,
-} from "../styles/flex";
+} from "../../styles/flex";
 
 const OrderListItem: React.FC<Order> = ({ id, user, products, price }) => {
   const date = getDate(id);

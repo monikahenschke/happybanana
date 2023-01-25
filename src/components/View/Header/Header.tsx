@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Container } from "../styles/components";
-import Logo from "./Logo";
+import { Container } from "../../../styles/components";
+import Logo from "../../Logo";
 import ActionButtons from "./ActionButtons";
-import HappyBananaText from "./HappyBananaText";
-import { FlexSpaceBetween } from "../styles/flex";
+import HappyBananaText from "../../HappyBananaText";
+import { FlexSpaceBetween } from "../../../styles/flex";
 
 const Header = () => {
   return (

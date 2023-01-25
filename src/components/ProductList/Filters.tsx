@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
-import Button from "./Button";
-import { useProductContext } from "../services/ProductContext";
-import { FlexCenter } from "../styles/flex";
-import { Container } from "../styles/components";
-import { FilterTypeEnum } from "../enums/FilterTypeEnum";
-import { SortTypeEnum } from "../enums/SortTypeEnum";
+import Button from "../Buttons/Button";
+import { useProductContext } from "../../services/ProductContext";
+import { FlexCenter } from "../../styles/flex";
+import { Container } from "../../styles/components";
+import { FilterTypeEnum } from "../../enums/FilterTypeEnum";
+import { SortTypeEnum } from "../../enums/SortTypeEnum";
 
 const Filters = () => {
   const { filterState, setFilterState, sortState, setSortState } =

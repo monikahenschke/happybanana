@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
-import { ProductCardTitle } from "../styles/components";
-import { FlexCenter } from "../styles/flex";
-import { useProductContext } from "../services/ProductContext";
-import Button from "./Button";
+import { ProductCardTitle } from "../../styles/components";
+import { FlexCenter } from "../../styles/flex";
+import { useProductContext } from "../../services/ProductContext";
+import Button from "../Buttons/Button";
 
-import { ContentTextBold } from "../styles/components";
+import { ContentTextBold } from "../../styles/components";
 
 interface BasketSummaryProps {
   children: React.ReactNode;

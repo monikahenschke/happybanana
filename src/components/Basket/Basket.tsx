@@ -3,16 +3,16 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 
-import { ProductCardTitle } from "../styles/components";
+import { ProductCardTitle } from "../../styles/components";
 
-import { useProductContext } from "../services/ProductContext";
+import { useProductContext } from "../../services/ProductContext";
 import BasketForm from "./BasketForm";
-import { Container } from "../styles/components";
-import { FlexCenter } from "../styles/flex";
+import { Container } from "../../styles/components";
+import { FlexCenter } from "../../styles/flex";
 import BasketSummary from "./BasketSummary";
 
-import { User } from "../models/UserModel";
-import { Order } from "../models/OrderModel";
+import { User } from "../../models/UserModel";
+import { Order } from "../../models/OrderModel";
 
 const Basket = () => {
   const navigate = useNavigate();

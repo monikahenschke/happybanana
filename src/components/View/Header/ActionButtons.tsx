@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-import { Flex } from "../styles/flex";
-import OrderListImg from "../assets/icons/order-list.png";
-import BasketImg from "../assets/icons/basket.png";
-import LinkButton from "./LinkButton";
-import { useProductContext } from "../services/ProductContext";
+import { Flex } from "../../../styles/flex";
+import OrderListImg from "../../../assets/icons/order-list.png";
+import BasketImg from "../../../assets/icons/basket.png";
+import LinkButton from "../../Buttons/LinkButton";
+import { useProductContext } from "../../../services/ProductContext";
 
 const ActionButtons = () => {
   const { quantityBasketProducts } = useProductContext();

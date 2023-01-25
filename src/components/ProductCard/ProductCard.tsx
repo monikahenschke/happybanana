@@ -2,14 +2,18 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
-import { useProductContext } from "../services/ProductContext";
-import { Product as ProductModel } from "../models/ProductModel";
-import { Container } from "../styles/components";
-import { ContentText, ProductCardTitle, PriceText } from "../styles/components";
-import ShoppingButton from "./ShoppingButton";
-import { Flex } from "../styles/flex";
+import { useProductContext } from "../../services/ProductContext";
+import { Product as ProductModel } from "../../models/ProductModel";
+import { Container } from "../../styles/components";
+import {
+  ContentText,
+  ProductCardTitle,
+  PriceText,
+} from "../../styles/components";
+import ShoppingButton from "../ShoppingButton";
+import { Flex } from "../../styles/flex";
 import ProposedProducts from "./ProposedProducts";
-import { findProductById } from "../utils";
+import { findProductById } from "../../utils";
 
 type ParamTypes = {
   id: string;
@@ -32,7 +36,7 @@ const ProductCard: React.FC = () => {
         {Product && (
           <ProductImage>
             <img
-              src={require(`../assets/products/${Product?.image}`)}
+              src={require(`../../assets/products/${Product?.image}`)}
               alt={Product?.title}
             />
           </ProductImage>
