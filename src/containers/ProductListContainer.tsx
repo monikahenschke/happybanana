@@ -3,32 +3,45 @@ import ProductList from "../components/ProductList";
 import { useEffect, useState } from "react";
 import { useProductContext } from "../services/ProductContext";
 import { Product } from "../models/ProductModel";
-import Pagination from "../components/Pagination";
+import { FilterTypeEnum } from "../enums/FilterTypeEnum";
 import { Container } from "../styles/components";
 import ProductListItem from "../components/ProductListItem";
+import { sortProductsByParam } from "../utils";
 
 const ProductListContainer: React.FC = () => {
-  const [productList, setProductList] = useState<Product[]>([]);
-  // const [productListCurrentlyShown, setProductListCurrentlyShown] = useState<
-  //   Product[]
-  // >([]);
-  // TODO: PAGINACJA
+  const { filterState, sortState, productList } = useProductContext();
 
-  const { fetchProductList } = useProductContext();
+  const [filteredProductList, setFilteredProductList] = useState<Product[]>([]);
+  const [sortedProductList, setSortedProductList] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetchProductList().then((products: Product[]) => {
-      setProductList(products);
-    });
-  }, []);
+    setFilteredProductList(productList);
+  }, [productList]);
+
+  useEffect(() => {
+    let newProductList: Product[] = [];
+
+    if (filterState !== FilterTypeEnum.All) {
+      newProductList = productList.filter((item) => {
+        return item.category === filterState;
+      });
+    } else newProductList = productList;
+
+    setFilteredProductList(newProductList);
+  }, [filterState]);
+
+  useEffect(() => {
+    const sortedProducts = sortProductsByParam(filteredProductList, sortState);
+    setSortedProductList([...sortedProducts]);
+  }, [sortState, filteredProductList]);
 
   return (
     <>
       <Filters />
       <Container>
         <ProductList>
-          {productList &&
-            productList.map((product, index) => (
+          {sortedProductList &&
+            sortedProductList.map((product, index) => (
               <ProductListItem
                 id={product.id}
                 key={index}
@@ -43,11 +56,6 @@ const ProductListContainer: React.FC = () => {
             ))}
         </ProductList>
       </Container>
-      {/* <Pagination
-        itemsPerPage={8}
-        itemsList={productList}
-        setItemsListCurrentlyShown={setProductListCurrentlyShown}
-      /> */}
     </>
   );
 };

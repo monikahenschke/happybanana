@@ -8,11 +8,8 @@ import {
   ContentText,
   ContentTextSmall,
   PriceText,
-  PaddingTopBottom20,
   PaddingTop5Bottom20,
-  PaddingBottom20,
   PaddingTopBottom5,
-  PaddingTop5,
 } from "../styles/components";
 import { FlexCenter } from "../styles/flex";
 
@@ -90,6 +87,7 @@ const StyledProductListItem = styled.li`
 const ProductDetails = styled.div`
   background: white;
   transform: translateY(0);
+  width: 100%;
   will-change: transform;
   transition: transform 0.3s ease-out;
 

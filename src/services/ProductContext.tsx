@@ -10,6 +10,9 @@ import { Product } from "../models/ProductModel";
 import { BasketProduct } from "../models/BasketProductModel";
 import { BasketProductSummary } from "../models/BasketProductSummaryModel";
 import { Order } from "../models/OrderModel";
+import { FilterTypeEnum } from "../enums/FilterTypeEnum";
+import { SortTypeEnum } from "../enums/SortTypeEnum";
+
 import {
   calculateBasketFinalPrice,
   calculateBasketProductsQuantity,
@@ -35,6 +38,11 @@ export interface ProductsContextProps {
   refreshBasketSummary: () => Promise<void>;
   saveNewOrder: (saveNewOrder: Order) => Promise<void>;
   fetchOrderList: () => Promise<Order[]>;
+  filterState: FilterTypeEnum;
+  setFilterState: React.Dispatch<React.SetStateAction<FilterTypeEnum>>;
+  sortState: SortTypeEnum;
+  setSortState: React.Dispatch<React.SetStateAction<SortTypeEnum>>;
+  productList: Product[];
 }
 
 export const ProductContext = createContext<ProductsContextProps>(
@@ -51,8 +59,16 @@ export const ProductContextProvider: FC<any> = ({ children }) => {
   const basketLS = getBasketLS();
   const [basketProducts, setBasketProducts] =
     useState<BasketProduct[]>(basketLS);
+  const [filterState, setFilterState] = useState<FilterTypeEnum>(
+    FilterTypeEnum.All
+  );
+  const [sortState, setSortState] = useState<SortTypeEnum>(SortTypeEnum.Name);
+  const [productList, setProductList] = useState<Product[]>([]);
 
   useEffect(() => {
+    fetchProductList().then((products: Product[]) => {
+      setProductList(products);
+    });
     return () => {
       setBasketLS(basketProducts);
     };
@@ -178,8 +194,20 @@ export const ProductContextProvider: FC<any> = ({ children }) => {
       refreshBasketSummary,
       saveNewOrder,
       fetchOrderList,
+      filterState,
+      setFilterState,
+      sortState,
+      setSortState,
+      productList,
     }),
-    [quantityBasketProducts, finalBasketPrice, basketProductsSummary]
+    [
+      quantityBasketProducts,
+      finalBasketPrice,
+      basketProductsSummary,
+      filterState,
+      sortState,
+      productList,
+    ]
   );
 
   return (

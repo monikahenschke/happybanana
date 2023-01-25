@@ -7,23 +7,24 @@ import { Product as ProductModel } from "../models/ProductModel";
 import { Container } from "../styles/components";
 import { ContentText, ProductCardTitle, PriceText } from "../styles/components";
 import ShoppingButton from "./ShoppingButton";
-import { Flex, FlexCenter } from "../styles/flex";
+import { Flex } from "../styles/flex";
 import ProposedProducts from "./ProposedProducts";
+import { findProductById } from "../utils";
 
 type ParamTypes = {
   id: string;
 };
 
 const ProductCard: React.FC = () => {
-  const { findOneProduct } = useProductContext();
+  const { productList } = useProductContext();
   const { id } = useParams<ParamTypes>();
   const [Product, setProduct] = useState<ProductModel>();
 
   useEffect(() => {
-    if (id) {
-      findOneProduct(+id).then((product) => setProduct(product));
+    if (productList && id) {
+      setProduct(findProductById(+id, productList));
     }
-  }, [id]);
+  }, [productList, id]);
 
   return (
     <Container>

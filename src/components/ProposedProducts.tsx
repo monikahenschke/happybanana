@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Flex, FlexCenter } from "../styles/flex";
+import { FlexCenter } from "../styles/flex";
 import styled from "styled-components";
-import { ContentText, ProductCardTitle, PriceText } from "../styles/components";
+import { ProductCardTitle } from "../styles/components";
 import { useProductContext } from "../services/ProductContext";
 import { Product } from "../models/ProductModel";
 import ProductListItem from "./ProductListItem";
@@ -27,7 +27,7 @@ const ProposedProducts = ({ category, productId }: ParamTypes) => {
   return (
     <>
       <FlexCenter>
-        <ProductCardTitle>Inne produkty z tej kategori </ProductCardTitle>
+        <ProductCardTitle>Inne produkty z tej kategorii </ProductCardTitle>
       </FlexCenter>
       <StyledProposedProducts>
         <ProductList>
