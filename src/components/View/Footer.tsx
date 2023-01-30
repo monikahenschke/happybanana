@@ -6,7 +6,7 @@ import { Flex, FlexCenter } from "../../styles/flex";
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter data-testid="footer">
       <Container>
         <Flex>
           <FlexCenter>

@@ -26,6 +26,7 @@ const ShoppingButton = ({ productId }: ShoppingButtonProps) => {
         </Button>
         <input
           type="number"
+          name="amount-text-input"
           value={inputValue}
           min="1"
           max="15"
