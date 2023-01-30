@@ -16,6 +16,7 @@ const OrdersListContainer = () => {
 
   useEffect(() => {
     fetchOrderList().then((orders: Order[]) => {
+      console.log(orders);
       const sortedOrders = sortOrdersByDate(orders);
       setOrdersList(sortedOrders);
     });

@@ -7,7 +7,7 @@ import { FlexSpaceBetween } from "../../../styles/flex";
 
 const Header = () => {
   return (
-    <StyledHeader>
+    <StyledHeader data-testid="header">
       <Container>
         <FlexSpaceBetween>
           <Logo />

@@ -10,7 +10,7 @@ const ActionButtons = () => {
   const { quantityBasketProducts } = useProductContext();
 
   return (
-    <Flex>
+    <Flex data-testid="action-buttons">
       <LinkButton
         to="/orders"
         variant="transparent"
